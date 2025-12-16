@@ -1,0 +1,14 @@
+# Python
+*.pyc
+__pycache__/
+venv/
+.env
+.venv
+
+# Django
+*.sqlite3
+
+
+
+# Vectorstore / persistent data
+vectorstore/
