@@ -261,7 +261,6 @@ Content-Type: application/json
   "sources": []
 }
 
-
 ```
 
 ## 6. Get Chat History
@@ -300,11 +299,10 @@ Authorization: Bearer <access_token>
   }
 ]
 
-
-
 ```
 
 **Error Response (400):**
+```json
 {
   "detail": "Authentication credentials were not provided."
 }
@@ -319,8 +317,8 @@ Authorization: Bearer <access_token>
 
 1. Clone the repository:
 ```bash
-git clone <repo-url>
-cd <project-folder>
+git clone https://github.com/mrh-rafi-18/drf-rag-chatbot.git
+cd drf-rag-chatbot
 ```
 2. Create and activate a virtual environment:
 ```bash
