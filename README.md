@@ -1,6 +1,6 @@
 # RAG-Powered Chatbot with Document Support
 
-![Python](https://img.shields.io/badge/Python-3.11-blue) ![Django](https://img.shields.io/badge/Django-5.2-green) ![REST](https://img.shields.io/badge/DRF-API-orange) ![License](https://img.shields.io/badge/License-MIT-lightgrey)
+![Python](https://img.shields.io/badge/Python-3.11-blue) ![Django](https://img.shields.io/badge/Django-5.2-green) ![REST](https://img.shields.io/badge/DRF-API-orange)
 
 ---
 
