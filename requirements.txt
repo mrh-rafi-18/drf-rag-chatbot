@@ -15,4 +15,5 @@ sentence-transformers
 python-docx
 apscheduler
 docx2txt
+gunicorn
 
