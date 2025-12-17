@@ -31,9 +31,9 @@ os.makedirs(VECTOR_STORE_BASE_DIR, exist_ok=True)
 SECRET_KEY = 'django-insecure-zr524^wkbiiio92g(k#t)rsz^yz50))83+w*h9wx!+o8-=zkhu'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [*]
 
 
 # Application definition
