@@ -31,7 +31,7 @@ class RAGPipeline:
         self.persist_dir = os.path.join(VECTOR_STORE_BASE_DIR, f"user_{user_id}")
         os.makedirs(self.persist_dir, exist_ok=True)
 
-        self.embeddings = HuggingFaceEndpointEmbeddings(model_name=EMBEDDING_MODEL)
+        self.embeddings = HuggingFaceEndpointEmbeddings(repo_id=EMBEDDING_MODEL)
 
         # Vector store
         self.vector_store: Optional[Chroma] = Chroma(
