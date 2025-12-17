@@ -7,11 +7,9 @@ langchain
 langchain-huggingface
 chromadb
 python-dotenv
-pydantic
 langchain-community
 pypdf
 langchain-chroma
-sentence-transformers
 python-docx
 apscheduler
 docx2txt
