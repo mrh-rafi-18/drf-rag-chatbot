@@ -1,5 +1,5 @@
 from langchain_chroma import Chroma  # updated
-from langchain_huggingface import HuggingFaceEmbeddings, HuggingFaceEndpoint, ChatHuggingFace
+from langchain_huggingface import HuggingFaceEmbeddings, HuggingFaceEndpoint, ChatHuggingFace,HuggingFaceEndpointEmbeddings
 from langchain_community.document_loaders import PyPDFLoader, Docx2txtLoader, TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.prompts import PromptTemplate
@@ -31,7 +31,7 @@ class RAGPipeline:
         self.persist_dir = os.path.join(VECTOR_STORE_BASE_DIR, f"user_{user_id}")
         os.makedirs(self.persist_dir, exist_ok=True)
 
-        self.embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
+        self.embeddings = HuggingFaceEndpointEmbeddings(model_name=EMBEDDING_MODEL)
 
         # Vector store
         self.vector_store: Optional[Chroma] = Chroma(
