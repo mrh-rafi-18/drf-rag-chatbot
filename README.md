@@ -1,5 +1,11 @@
 # RAG-Powered Chatbot with Document Support
 
+# For Quick Review go through the short video demonstration: 
+[Demo Video](https://drive.google.com/file/d/1Y8ID30XF4umUkzh7hItxI46yWc0Y_sCV/view?usp=sharing
+)
+
+
+---
 ![Python](https://img.shields.io/badge/Python-3.11-blue) ![Django](https://img.shields.io/badge/Django-5.2-green) ![REST](https://img.shields.io/badge/DRF-API-orange)
 
 ---
@@ -55,7 +61,7 @@ The **RAG pipeline** combines document retrieval with AI response generation:
 
 ### 5. Scheduled Background Tasks
 Implemented via **APScheduler**:
-- **Delete Old Chat History:** Runs every 30 days (configurable; 5 min for testing).  
+- **Delete Old Chat History:** Runs every 30 days (configurable; 1 min for testing currently).  
 - **Send Verification Emails:** Triggered after user registration.
 
 ### 6. Testing Strategies
@@ -337,8 +343,17 @@ pip install -r requirements.txt
 ```bash
 HUGGINGFACEHUB_API_TOKEN="your_huggingface_api_token_here"
 EMAIL="your_email_here"
-EMAIL_PASSWORD="your_email_password_here"
+EMAIL_PASSWORD="your_email_app_password_here"
 ```
+```
+ To get the App Password you have to go through below given steps:
+
+Enable 2-Factor Authentication on your Google account
+Go to Google Account → Security → 2-Step Verification → App passwords
+Generate a new app password for "Mail"
+Use this generated password as EMAIL_PASSWORD
+```
+
 
 5. Make migrations and migrate:
 
@@ -351,6 +366,9 @@ python manage.py migrate
 ```bash
 python manage.py runserver
 ```
+
+7. You will find the endpoints in swagger through this link :
+   [Swagger ui](http://127.0.0.1:8000/)
 
 
 ## Background Task Setup
