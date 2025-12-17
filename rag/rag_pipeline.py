@@ -1,5 +1,5 @@
-from langchain_chroma import Chroma  # updated
-from langchain_huggingface import HuggingFaceEmbeddings, HuggingFaceEndpoint, ChatHuggingFace,HuggingFaceEndpointEmbeddings
+from langchain_chroma import Chroma  
+from langchain_huggingface import  HuggingFaceEndpoint, ChatHuggingFace,HuggingFaceEndpointEmbeddings
 from langchain_community.document_loaders import PyPDFLoader, Docx2txtLoader, TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.prompts import PromptTemplate
