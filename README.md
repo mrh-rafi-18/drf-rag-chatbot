@@ -1,7 +1,7 @@
 # RAG-Powered Chatbot with Document Support
 
 # For Quick Review go through the short video demonstration: 
-## [Demo Video](https://drive.google.com/file/d/1Y8ID30XF4umUkzh7hItxI46yWc0Y_sCV/view?usp=sharing
+[## Demo Video](https://drive.google.com/file/d/1Y8ID30XF4umUkzh7hItxI46yWc0Y_sCV/view?usp=sharing
 )
 
 
