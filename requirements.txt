@@ -10,7 +10,6 @@ python-dotenv
 langchain-community
 pypdf
 langchain-chroma
-sentence-transformers
 python-docx
 apscheduler
 docx2txt
